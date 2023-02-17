@@ -253,7 +253,7 @@ namespace GodotTools.Build
                 "GodotTools.BuildLogger.dll");
 
             arguments.Add(
-                $"-l:{typeof(GodotBuildLogger).FullName},{buildLoggerPath};{buildInfo.LogsDirPath}");
+                $"\"-l:{typeof(GodotBuildLogger).FullName},{buildLoggerPath};{buildInfo.LogsDirPath}\"");
         }
 
         private static void AddBinaryLogArgument(BuildInfo buildInfo, Collection<string> arguments,
